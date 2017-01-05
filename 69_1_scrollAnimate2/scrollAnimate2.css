@@ -1,0 +1,30 @@
+.container-fluid {
+    height: 1000px;
+}
+.slideanimate {
+    visibility: hidden;
+}
+
+.slide{
+    visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        background-color: bisque;
+        text-align: center;
+    }
+    p{
+        color:blue;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .col-sm-4 {
+        background-color: gray;
+        font-size: 48px;
+    }
+    p{
+        color:red;
+    }
+}

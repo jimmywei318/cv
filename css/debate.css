@@ -1,0 +1,73 @@
+.speaker{
+    background-color: #A9F5A9;
+}
+
+.soundbite{
+    color: grey
+}
+.dem{
+    background-color: #81BEF7;
+    color:#0080FF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+}
+
+.speaker{
+    font-size:150%;
+}
+
+.gop{
+    background-color: #F5A9A9;
+    color: #DF0101;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+}
+
+p{
+    margin-left: 100px;
+}
+
+img{
+    display:none;
+}
+
+.fact-checked{
+    color:#CEDE21;
+    border: 2px solid #CEDE21;
+    font-size: 15px;
+}
+
+.annotation{
+    margin-left: 100px;
+    margin-bottom: 10px;
+    background-color: #D8D8D8;
+    border: 1px solid;
+}
+
+.annotation{
+    width: 1100px;
+    font-family: Arial;
+}
+
+.annotation p{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.annotation-byline{
+    margin-left: 100px;
+    text-align: right
+}
+
+.speaker + p{
+    background-color: #A9F5A9;
+}
+
+.dem + p{
+    background-color: #81BEF7;
+}
+
+.gop + p{
+    background-color: #F5A9A9;
+}

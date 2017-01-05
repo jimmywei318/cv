@@ -1,0 +1,153 @@
+.jumbotron {
+/*    background-color: coral;*/
+    background: url("http://pic.pimg.tw/chyang1983/1372693106-4056333680_l.jpg") center center;
+    color: #fff; /*text color*/
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    width: auto;
+    height: 400px;;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+footer {
+    font-family: 'Indie Flower', serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container h1{
+    color: whitesmoke;
+    font-family: 'Pacifico';
+}
+
+.container p{
+    font-size: 20px;
+    font-family: 'SLibre Franklin';
+    color: papayawhip;
+}
+
+.container-fluid{
+    padding:60px 50px;
+    margin-top: -60px;
+}
+
+
+#gallery img {
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(1);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.75);
+    margin-bottom: 20px;
+}
+#gallery img:hover {
+    filter: none;
+    /* IE6-9 */
+    -webkit-filter: grayscale(0);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+/*
+.well{
+    border-radius: 0px;
+}
+*/
+
+#publications  h4{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#publications h4:hover{
+    color: black;
+    background-color: gainsboro;
+}
+
+.modal-dialog {
+    width:600px;
+    margin-top: 100px;
+}
+
+.modalthumb {
+    margin-bottom:6px;
+}
+
+#test12 img{
+    width: 100px;
+    height: 100px;
+}
+
+#parallax1{
+    /* The image used */
+    background-image: url("https://www.elastica.net/wp-content/uploads/2014/03/2014-03-DataScienceA-1480x760.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax2{
+    /* The image used */
+    background-image: url("https://www.elastica.net/wp-content/uploads/2014/03/2014-03-DataScienceA-1480x760.jpg");
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#bird{
+    background: #000 url("http://kingofwallpapers.com/sky/sky-010.jpg") center top;
+    z-index=-2;
+    background-attachment: fixed;
+    background-position: top;
+    width: 100%;
+    min-height: 1000px;
+    background-size:cover;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+#bird .row{
+    position:relative;
+    min-height:1000px;
+}
+#bird img{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    bottom: 20%;
+    left: 15%;
+}
+
+div.flip p.description{
+    display: none;
+}
+
+.iframe-container {
+    position: relative;
+    width: 60%;
+    height: 0;
+    padding-bottom: 30%;
+}
+.iframe-table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

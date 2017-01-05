@@ -1,0 +1,137 @@
+
+body{
+    margin: 0;
+}
+
+#nav, #content, #supporting{
+    margin-top: 100px;
+}
+
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#banner {
+    width:800px;
+    background-color: azure;
+    position: fixed;
+    height:100px;
+}
+
+#nav {
+    width: 150px;
+    background-color: bisque;
+    float: left;
+    position: fixed;
+}
+
+#content {
+    width: 500px;
+    background-color: lightgray;
+    float: left;
+    margin-left: 150px;
+}
+
+#supporting {
+    width: 150px;
+    background-color: greenyellow;
+    float: left;
+}
+
+#footer {
+    width: 800px;
+    background-color: lightcoral;
+    float: left;
+    clear: both;
+}
+
+table{
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+td:hover{
+    background-color: grey;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th{
+   border-bottom: 3px solid black;
+    padding: 5px;
+}
+
+
+.container{
+    padding: 10px;
+}
+
+.item{
+    padding-top: 100px;
+    margin-top: -100px;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    display:block;
+    background-color:beige;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-top:5px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+li a{
+    text-decoration: none;
+}
+
+li a:link{
+    color: yellowgreen;
+}
+
+li a:visited{
+    color: red;
+}
+
+li:hover{
+    background-color: grey;
+    color:aliceblue;
+    box-shadow: 5px 5px 3px grey;
+}
+
+li a:active{
+    background-color: grey;
+    color: brown;
+}
+
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    width: 180px;
+    height: 180px;
+    border: 2px solid darkgrey;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+div.img a:hover img {
+    border:2px solid #fffff5;
+}
