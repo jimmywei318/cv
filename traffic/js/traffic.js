@@ -17,7 +17,7 @@ $(document).ready(function () {
         var document_height = $(document).height() - $(window).height();
         $(window).scroll(function () {
             var scroll_position = $(window).scrollTop();
-            var object_position_left = window_width * (scroll_position / document_height) * 4;
+            var object_position_left = window_width * (scroll_position / document_height) * 2;
 
             if (object_position_left <= window_width) {
                 $('.moved').css({
@@ -37,7 +37,7 @@ $(document).ready(function () {
         var document_height = $(document).height() - $(window).height();
         $(window).scroll(function () {
             var scroll_position = $(window).scrollTop();
-            var object_position_right = window_width * (scroll_position / document_height) * 4;
+            var object_position_right = window_width * (scroll_position / document_height) * 2;
 
             if (object_position_right <= window_width) {
                 $('.moved2').css({
