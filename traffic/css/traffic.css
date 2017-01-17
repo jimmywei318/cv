@@ -325,6 +325,19 @@ side-nav #btn-01:active {
     background-size:cover;
     text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+    #accidentmap {
+        background-image: url("../assets/accidentmap(pad).png");
+    }
+}
+@media screen and (max-width: 400px) {
+    #accidentmap {
+        background-image: url("../assets/accidentmap(phone).png");
+
+    }
+}
+
 #accidentmap:before{
     content: "";
     height: 100%;
