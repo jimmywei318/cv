@@ -329,12 +329,13 @@ side-nav #btn-01:active {
 @media screen and (max-width: 800px) {
     #accidentmap {
         background-image: url("../assets/accidentmap(pad).png");
+        background-size:cover;
     }
 }
 @media screen and (max-width: 400px) {
     #accidentmap {
         background-image: url("../assets/accidentmap(phone).png");
-
+        background-size:cover;
     }
 }
 
