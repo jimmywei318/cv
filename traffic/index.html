@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>2015年台北市事故統計</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+
+    <!--    css-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="css/traffic.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <script src="js/jquery.animateNumber.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--    google font-->
+    <link href="http://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+    <script src="js/traffic.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+    <nav class="navbar side-nav text-center">
+        <div class="row mobile-row show-mobile">
+
+            <a href="#myPage"><img class="mobile-logo hover-grow" src="assets/sidebar-svg/logo.svg"></a>
+            <div class="burger-icon"><span></span> <span></span> <span></span></div>
+
+        </div>
+
+        <a href="#myPage"><img class="logo hover-grow" src="assets/sidebar-svg/logo.svg"></a>
+
+        <div class="nav-container">
+            <a href="#place" class="nav-link"><img id="btn-01" src="assets/sidebar-svg/locate.svg" class="nav-icon"> </a>
+
+            <a href="#weather" class="nav-link"><img id="btn-02" src="assets/sidebar-svg/sun.svg" class="nav-icon"> </a>
+
+            <a href="#time" class="nav-link"><img id="btn-03" src="assets/sidebar-svg/clock.svg" class="nav-icon"> </a>
+
+            <a href="#carkind" class="nav-link"><img id="btn-04" src="assets/sidebar-svg/motorcycle.svg" class="nav-icon"> </a>
+
+
+        </div>
+        </div>
+    </nav>
+
+
+
+    <div id="cover">
+        <div class="row" style="background-color: #D1D0D4">
+            <div class="container-fluid">
+                <div class="title"><img id="title" src="assets/title.svg" /></div>
+
+                <div class="center"><img id="intro" src="assets/intro.svg" /></div>
+
+                <div class="car"><img id="car1" class="moved" src="assets/car1.svg" />
+
+                    <img id="road" src="assets/coverroad.svg" />
+
+                    <img id="car2" class="moved2" src="assets/car2.svg" /></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id='place'>
+        <div class="row">
+            <div class="container-fluid">
+                <div id="accidentmap" class="row">
+                    <img id="placetitle" src="assets/placetitle.svg" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid">
+                <div id="maps" class="col-sm-8 col-xs-12">
+                    <div id="map" class="row"></div>
+
+                </div>
+
+
+                <div id="box" class="box col-sm-4 col-xs-12" style="background-color: #808080">
+                    <section id="place1" class="active">
+                        <h1 class="boxtitle">Top1</h1>
+                        <h3 class="boxsubtilte">延平北路<br>與民權西路交叉口</h3>
+
+                        <p class="count"><span id="number30">30</span>次</p>
+
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10">
+                            <p class="boxp">延平北路與民權西路交叉口正是台北橋的下橋處，此處為台北市最常發生傷亡車禍的死亡路段。
+
+                                <br>下橋處車流量大、車速快，再加上視線死角，使得下橋車輛容易與平面道路車輛發生擦撞造成傷亡。
+
+                                <br>台北橋連接台北市大同區與新北市三重區兩地人口，尤其下橋處更是著名的「機車瀑布」。
+                            </p>
+                        </div>
+                        <div class="col-sm-1"></div>
+
+                        <div class="sv">
+                            <img type="button" onclick="toggleStreetView();" src="assets/streetviewbutton.svg" />
+                        </div>
+
+
+                    </section>
+
+                    <section id="place2">
+                        <h1 class="boxtitle">Top2</h1>
+                        <h3 class="boxsubtilte">松仁路與<br>信義路五段交叉口</h3>
+                        <p class="count"><span id="number25">25</span>次</p>
+
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10">
+                            <p class="boxp">松仁路與信義路五段交叉口，是往木柵方向的快速道路入口，也是通往南港松山方向的一般隧道入口處。
+                                <br>此路段交叉口尤其在上下班時段車流眾多，車輛常因搶快、搶紅燈而發生致命意外。
+                                <br>此處多起車禍尤其涉及行人、腳踏車與公車，可能與松仁路鄰近住宅區及信義區為人潮集散地有關。
+                            </p>
+                        </div>
+                        <div class="col-sm-1"></div>
+
+                        <div class="sv">
+                            <img type="button" onclick="toggleStreetView();" src="assets/streetviewbutton.svg" />
+                        </div>
+
+                    </section>
+
+                    <section id="place3">
+                        <h1 class="boxtitle">Top3</h1>
+                        <h3 class="boxsubtilte">松壽路與<br>基隆路一段交叉口</h3>
+
+                        <p class="count"><span id="number23">23</span>次</p>
+
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10">
+                            <p class="boxp">松壽路與基隆路一段交叉口是進入基隆路地下道的入口處。此處交通混亂，一是基隆路上直行進入地下道的車輛，容易與欲右轉駛入松壽路的車輛擦撞。
+                                <br>二是松壽路欲直行車輛易與基隆路欲進地下道車輛擦撞。三是在松壽路上欲直行往市政府方向的車輛，易與左轉基隆路一段往仁愛路方向的車輛擦撞。
+                                <br>此處交通動線設計不良，駕駛人要多加留心、車速應放慢行駛。
+                            </p>
+                        </div>
+                        <div class="col-sm-1"></div>
+
+                        <div class="sv">
+                            <img type="button" onclick="toggleStreetView();" src="assets/streetviewbutton.svg" />
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            //        map1
+            var panorama;
+
+            function initMap() {
+
+
+                var accident1 = {
+                    lat: 25.062790,
+                    lng: 121.511199
+                };
+
+                var accident2 = {
+                    lat: 25.03282,
+                    lng: 121.56829
+                };
+
+                var accident3 = {
+                    lat: 25.035929,
+                    lng: 121.561463
+                };
+
+                // Set up the map
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: accident1,
+                    zoom: 18,
+                    scrollwheel: false,
+                    streetViewControl: false
+                });
+
+                // Set up the markers on the map
+                var accident1Marker = new google.maps.Marker({
+                    position: {
+                        lat: 25.062790,
+                        lng: 121.511199
+                    },
+                    map: map,
+                    title: '延平北路與民權西路交叉口'
+                });
+
+                var accident2Marker = new google.maps.Marker({
+                    position: {
+                        lat: 25.03282,
+                        lng: 121.56829
+                    },
+                    map: map,
+                    title: '松仁路與信義路五段交叉口'
+                });
+
+                var accident3Marker = new google.maps.Marker({
+                    position: {
+                        lat: 25.035929,
+                        lng: 121.561463
+                    },
+                    map: map,
+                    title: '松壽路與基隆路一段交叉口'
+                });
+
+
+                // We get the map's default panorama and set up some defaults.
+                // Note that we don't yet set it visible.
+
+
+                function newLocation(newLat, newLng) {
+                    map.setCenter({
+                        lat: newLat,
+                        lng: newLng
+                    });
+                }
+
+
+                $('#box').scroll(function () {
+                    $("#place1").each(function () {
+                        var pos = $('#place1').offset().top;
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 400) {
+                            newLocation(25.062790, 121.511199);
+
+                            panorama.setPosition(accident1);
+                            panorama.setPov( /** @type {google.maps.StreetViewPov} */ ({
+                                heading: 265,
+                                pitch: 0
+                            }));
+                        }
+                    });
+                });
+                $('#box').scroll(function () {
+                    $("#place1").each(function () {
+                        var pos = $('#place2').offset().top;
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 400) {
+                            newLocation(25.03282, 121.56829);
+
+                            panorama.setPosition(accident2);
+                            panorama.setPov( /** @type {google.maps.StreetViewPov} */ ({
+                                heading: 125,
+                                pitch: 0
+                            }));
+                        }
+
+                    });
+                });
+
+                $('#box').scroll(function () {
+                    $("#place3").each(function () {
+                        var pos = $('#place3').offset().top;
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 400) {
+                            newLocation(25.035929, 121.561463);
+
+                            panorama.setPosition(accident3);
+                            panorama.setPov( /** @type {google.maps.StreetViewPov} */ ({
+                                heading: 60,
+                                pitch: 0
+                            }));
+                        }
+                    });
+                });
+
+
+                panorama = map.getStreetView();
+                panorama.setPosition(accident1);
+                panorama.setPov( /** @type {google.maps.StreetViewPov} */ ({
+                    heading: 265,
+                    pitch: 0
+                }));
+
+
+                google.maps.event.addDomListener(window, 'load', initMap);
+            }
+
+            function toggleStreetView() {
+                var toggle = panorama.getVisible();
+                if (toggle == false) {
+                    panorama.setVisible(true);
+                } else {
+                    panorama.setVisible(false);
+                }
+            }
+        </script>
+
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwkihkYhDP3zCEEWCFK-6KHytF05HJhww&callback=initMap" async defer>
+        </script>
+
+
+    </div>
+
+    <div class="row">
+        <div class="container-fluid" style="background-color: #D1D0D4">
+            <img id="top10" src="assets/top10.svg" />
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="container-fluid" style="background-color: #A4A4A5">
+
+            <img id="knowmore" src="assets/knowmore.svg" />
+
+
+        </div>
+    </div>
+
+
+
+    <div id='weather'>
+        <div class="row">
+            <div class="container-fluid" style=" background-color: #D1D0D4">
+                <div>
+                    <img id="weathertitle" src="assets/weather/weather-title.svg" />
+
+                    <img id="weatherpie" src="assets/weather/pie.svg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='time'>
+        <div class="row">
+            <div class="container-fluid" style=" background-color: #A4A4A5">
+                <img id="timetitle" src="assets/time/time-title.svg" />
+
+                <img id="timegraph" src="assets/time/time-chart.svg" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id='carkind'>
+        <div class="row">
+            <div class="container-fluid" style="background-color:#D1D0D4">
+                <div class="title">
+                    <img id="cartitle" src="assets/car/transportation-title.svg" />
+                </div>
+
+
+                <img id="mbike" src="assets/car/motorcycle.svg" />
+
+
+                <img id="car" src="assets/car/car.svg" />
+                <img id="taxi" src="assets/car/taxi.svg" />
+                <img id="passenger" src="assets/car/passenger.svg" />
+                <img id="truck" src="assets/car/truck.svg" />
+                <img id="bike" src="assets/car/bike.svg" />
+                <img id="bus" src="assets/car/bus.svg" />
+            </div>
+        </div>
+    </div>
+
+    <div id="end">
+        <div class="row">
+            <div class="container-fluid">
+
+                <img id="endroad" src="assets/end/endpic.svg" />
+
+
+                <img id="carend" src="assets/end/carback.png" />
+
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <footer style=" background-color: #A4A4A5">
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </footer>
+-->
+
+
+
+
+
+</body>
+
+</html>
