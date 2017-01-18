@@ -95,6 +95,13 @@ $(document).ready(function () {
         });
     });
 
+       $('#place2').waypoint(function () {
+        $('#scrollme').css("visibility", "hidden");
+    }, {
+        offset: '80%'
+    });
+
+
     //   carkind
     $('#mbike').waypoint(function () {
         $('#mbike').addClass('animated fadeInLeft');

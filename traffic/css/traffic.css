@@ -329,13 +329,13 @@ side-nav #btn-01:active {
 @media screen and (max-width: 800px) {
     #accidentmap {
         background-image: url("../assets/accidentmap(pad).png");
-        background-size:cover;
+        background-size:contain;
     }
 }
 @media screen and (max-width: 400px) {
     #accidentmap {
         background-image: url("../assets/accidentmap(phone).png");
-        background-size:cover;
+        background-size:contain;
     }
 }
 
@@ -354,6 +354,12 @@ side-nav #btn-01:active {
     z-index: 99;
 }
 
+#scrollme{
+    height: 15vh;
+    display:inline-block;
+    position: absolute;
+    opacity: 0.5;
+}
 
 /*google map*/
 #place{
@@ -379,7 +385,7 @@ side-nav #btn-01:active {
 }
 
 #place2, #place3{
-
+    margin-top: 10em;
 }
 
 section{
@@ -433,6 +439,8 @@ section.active {
 
 .sv img{
     width: 10vw;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 @media screen  and (min-width: 600px) and (max-width: 960px){
